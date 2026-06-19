@@ -181,7 +181,7 @@ Template specialization allows providing a custom implementation for a specific 
 - Sequential containers: `std::vector`, `std::list`, `std::deque`
 - Associative containers: `std::map`, `std::set`
 - Iterators and their categories
-- STL algorithms: `std::find`, `std::sort`, `std::for_each`
+- STL algorithms: `std::find`, `std::sort`
 - `std::stack` container adaptor
 
 ### Key points
@@ -215,21 +215,9 @@ This module applies STL knowledge to real algorithmic problems. The Bitcoin Exch
 - No `malloc` / `free` — use `new` / `delete`
 - No forbidden C functions (refer to each subject)
 - One class per pair of `.hpp` / `.cpp` files
-- Orthodox Canonical Form is mandatory from CPP04 onward
+- Orthodox Canonical Form is mandatory from CPP02 onward
 - No memory leaks tolerated — check with `valgrind`
 - All headers must be protected with include guards
-
----
-
-## Useful Commands
-
-```bash
-# Compile an exercise
-c++ -Wall -Wextra -Werror -std=c++98 *.cpp -o my_program
-
-# Check for memory leaks
-valgrind --leak-check=full ./my_program
-```
 
 ---
 
