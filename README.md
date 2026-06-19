@@ -140,7 +140,6 @@ Always catch exceptions by reference to avoid object slicing. When multiple exce
 - `static_cast` — compile-time checked conversions
 - `dynamic_cast` — safe runtime downcasting (requires at least one virtual method)
 - `reinterpret_cast` — raw bit reinterpretation
-- `const_cast` — adding or removing `const`
 
 ### Cast summary
 
@@ -201,7 +200,6 @@ Container adaptors like `std::stack` and `std::queue` restrict the interface of 
 - `std::stack` for RPN calculator
 - `std::deque`, `std::vector` and the **Ford-Johnson algorithm** (merge-insertion sort)
 - Performance comparison between containers
-- Execution time measurement with `clock()`
 
 ### Key points
 
